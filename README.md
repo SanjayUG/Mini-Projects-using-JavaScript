@@ -1,1 +1,1 @@
-<h2>DEmo PRoject</h2>
+<h2>Mini PRoject</h2>
