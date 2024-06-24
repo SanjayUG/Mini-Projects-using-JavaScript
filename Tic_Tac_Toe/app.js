@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.box');
     const restartButton = document.getElementById('restart-button');
-    const resetButton = document.getElementById('reset-button');
     let currentPlayer = 'X';
     let board = Array(9).fill(null);
 
@@ -24,12 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPlayer = 'X';
     });
 
-    resetButton.addEventListener('click', () => {
-        board = Array(9).fill(null);
-        boxes.forEach(box => box.innerText = '');
-        currentPlayer = 'X';
-        location.reload(); // This will refresh the page
-    });
 
     function checkWinner(board) {
         const winningCombinations = [
