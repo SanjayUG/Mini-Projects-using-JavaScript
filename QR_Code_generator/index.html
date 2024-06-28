@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>QR Generator</title>
 </head>
 <body>
-    
+    <h1>Generate the QR  :.</h1>
+    <div class="container">
+        <h3>Enter the <strong>TEXT</strong>:</h3>
+        <input type="text" id="qrText" placeholder="Give me text or URL">
+        <div id="imgBox">
+            <img src="" id="qrImage">
+        </div>
+        <button onclick="genQR()">Gen:. QR</button>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
